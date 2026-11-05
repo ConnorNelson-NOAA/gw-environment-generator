@@ -1,0 +1,10 @@
+executable,profile,modulefiles
+enkf.x,,bufr/12.1.0;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27;stack-intel-oneapi-mpi/2021.13
+gcafs_model.x,,jasper/2.0.32;libjpeg/2.1.0;libpng/1.6.37;netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2;stack-intel-oneapi-mpi/2021.13
+gdas.x,FV3JEDI,atlas/0.40.0;bufr/12.1.0;eckit/1.28.3;fckit/0.13.2;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27;stack-intel-oneapi-mpi/2021.13
+gefs_model.x,,jasper/2.0.32;libjpeg/2.1.0;libpng/1.6.37;netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2;stack-intel-oneapi-mpi/2021.13
+gfs_model.x,,jasper/2.0.32;libjpeg/2.1.0;libpng/1.6.37;netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2;stack-intel-oneapi-mpi/2021.13
+global_cycle,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27;stack-intel-oneapi-mpi/2021.13
+gsi.x,,bufr/12.1.0;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27;stack-intel-oneapi-mpi/2021.13
+sfs_model.x,,jasper/2.0.32;libjpeg/2.1.0;libpng/1.6.37;netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2;stack-intel-oneapi-mpi/2021.13
+upp.x,,jasper/2.0.32;libjpeg/2.1.0;libpng/1.6.37;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27;stack-intel-oneapi-mpi/2021.13

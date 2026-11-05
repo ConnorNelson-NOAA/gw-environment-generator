@@ -1,0 +1,13 @@
+provider,modulefile,status
+mpi,stack-intel-oneapi-mpi/2021.13,resolved
+jpeg,libjpeg/2.1.0,resolved
+png,libpng/1.6.37,resolved
+jasper,jasper/2.0.32,resolved
+fv3jedi,,unresolved
+ioda,,unresolved
+oops,,unresolved
+saber,,unresolved
+soca,,unresolved
+ufo,,unresolved
+vader,,unresolved
+crtm,,unresolved
