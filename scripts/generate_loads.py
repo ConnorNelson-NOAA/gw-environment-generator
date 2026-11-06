@@ -19,10 +19,17 @@ else:
 
     mapping = {
         "orion": "orion",
+        "orion-login": "orion",
+
         "ursa": "ursa",
+        "ufe": "ursa",
+
         "hercules": "hercules",
+        "hfe": "hercules",
+
         "hera": "hera",
         "gaea": "gaea",
+
         "wcoss": "wcoss2",
     }
 
