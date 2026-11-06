@@ -1,0 +1,12 @@
+# Validated 2026-11-05
+
+# Required by:
+# fv3jedi_var.x
+# fv3jedi_hofx.x
+# fv3jedi_forecast.x
+# fv3jedi_eda.x
+# fv3jedi_letkf.x
+
+intel-oneapi-mkl/2024.2.1
+netcdf-cxx4/4.3.1
+udunits/2.2.28

@@ -1,0 +1,14 @@
+executable,validated_additional_modules
+fv3jedi_var.x,intel-oneapi-mkl/2024.2.1
+fv3jedi_hofx.x,intel-oneapi-mkl/2024.2.1
+fv3jedi_forecast.x,intel-oneapi-mkl/2024.2.1
+fv3jedi_eda.x,intel-oneapi-mkl/2024.2.1
+fv3jedi_letkf.x,intel-oneapi-mkl/2024.2.1
+gdas_fv3jedi_fv3inc.x,intel-oneapi-mkl/2024.2.1
+show_queries.x,bufr-query/0.0.4
+bufr2netcdf.x,bufr-query/0.0.4
+show_queries.x,validated after bufr-query/0.0.4
+bufr2netcdf.x,validated after bufr-query/0.0.4
+gdas_soca_diagnostics.x,install issue: libgdas_soca_diagnostics.so exists in build/lib but not install/lib
+reg2grb2.x,modulefile issue: wgrib2/3.7.0 points to /apps/contrib/wgrib2/lib but installation uses lib64
+reg2grb2.x,missing library: libwgrib2_ftn_api.so not present in /apps/contrib/wgrib2/lib64

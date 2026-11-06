@@ -3,11 +3,36 @@
 import csv
 import sys
 
-if len(sys.argv) != 2:
+if len(sys.argv) not in (2,3):
     print("Usage: generate_loads_v3.py <JOB>")
     sys.exit(1)
 
 job = sys.argv[1]
+
+import socket
+import csv
+
+if len(sys.argv) == 3:
+    machine = sys.argv[2]
+else:
+    host = socket.gethostname().lower()
+
+    mapping = {
+        "orion": "orion",
+        "ursa": "ursa",
+        "hercules": "hercules",
+        "hera": "hera",
+        "gaea": "gaea",
+        "wcoss": "wcoss2",
+    }
+
+    machine = "unknown"
+
+    for token, value in mapping.items():
+        if token in host:
+            machine = value
+            break
+
 
 jobs = {}
 
@@ -27,6 +52,13 @@ if row["executable"] == "N/A":
 
 mods = {}
 
+machine_profile = {}
+
+with open("data/machine_profile_inventory.csv") as f:
+    for profile_row in csv.DictReader(f):
+        machine_profile[profile_row["machine"]] = profile_row
+
+
 with open("data/canonical_modulefile_inventory_v2.csv") as f:
     for r in csv.DictReader(f):
         mods[r["executable"]] = r["modulefiles"]
@@ -37,13 +69,23 @@ print()
 #
 # NOAA stack prerequisites
 #
-print("module load GDAS/orion.intel")
-print("module load stack-oneapi/2024.2.1")
+if machine in machine_profile:
+
+    modulepaths = [
+        x.strip()
+        for x in machine_profile[machine]["modulepaths"].split(";")
+        if x.strip()
+    ]
+
+    for mp in modulepaths:
+        print(f"module use {mp}")
+
+    print()
+
+    print(f'module load {machine_profile[machine]["compiler_stack"]}')
+
 
 exe = row["executable"]
-
-if exe == "gdas.x":
-    print("module load intel-oneapi-mkl/2024.2.1")
 
 if exe in mods:
 
@@ -53,12 +95,16 @@ if exe in mods:
         if x.strip()
     ]
 
-    if any("stack-intel-oneapi-mpi" in x for x in modulefiles):
-        print("module load stack-intel-oneapi-mpi/2021.13")
+    if machine in machine_profile:
+        print(f'module load {machine_profile[machine]["mpi_stack"]}')
+
 
     for m in modulefiles:
 
-        if "stack-intel-oneapi-mpi" in m:
+        if (
+            "stack-intel-oneapi-mpi" in m
+            or "stack-cray-mpich" in m
+        ):
             continue
 
         print(f"module load {m}")

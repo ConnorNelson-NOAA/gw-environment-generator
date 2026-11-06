@@ -1,0 +1,7 @@
+machine,gdas_module,modulepaths,compiler_stack,mpi_stack,python_stack
+orion,GDAS/orion.intel,/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/Core;/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/gcc/12.2.0,stack-oneapi/2024.2.1,stack-intel-oneapi-mpi/2021.13,
+ursa,GDAS/ursa.intel,/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/Core,stack-oneapi/2024.2.1,stack-intel-oneapi-mpi/2021.13,
+hercules,GDAS/hercules.intel,/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/Core;/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/gcc/13.3.0,stack-oneapi/2024.2.1,stack-intel-oneapi-mpi/2021.13,
+hera,GDAS/hera.intel,/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/Core,stack-oneapi/2024.2.1,stack-intel-oneapi-mpi/2021.13,
+wcoss2,GDAS/wcoss2.intel,/apps/ops/test/spack-stack-nco-1.9/modulefiles/Core;/apps/ops/test/nco/modulefiles/core,stack-oneapi/2024.2.1,stack-cray-mpich/8.1.29,
+gaea,GDAS/gaeac6.intel,/ncrc/proj/epic/spack-stack/c6/spack-stack-1.9.3/envs/ue-oneapi-2024.2.1/install/modulefiles/Core;/ncrc/proj/epic/spack-stack/c6/spack-stack-1.9.2/envs/ue-intel-2023.2.0/install/modulefiles/gcc/12.3.0;/autofs/ncrc-svm1_proj/hurr1/hafs/shared/modulefiles;/usw/hpss/modulefiles,stack-oneapi/2024.2.1,stack-cray-mpich/8.1.32,
