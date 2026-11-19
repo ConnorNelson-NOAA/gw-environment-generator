@@ -1,0 +1,10 @@
+executable,profile,modules
+enkf.x,,bufr;mpi;netcdf-c;netcdf-fortran;openblas
+gcafs_model.x,,jasper;jpeg;mpi;netcdf-c;netcdf-fortran;parallelio;png
+gdas.x,FV3JEDI,atlas;bufr;crtm;eckit;fckit;fv3jedi;ioda;mpi;netcdf-c;netcdf-fortran;oops;openblas;saber;soca;ufo;vader
+gefs_model.x,,jasper;jpeg;mpi;netcdf-c;netcdf-fortran;parallelio;png
+gfs_model.x,,jasper;jpeg;mpi;netcdf-c;netcdf-fortran;parallelio;png
+global_cycle,,mpi;netcdf-c;netcdf-fortran;openblas
+gsi.x,,bufr;mpi;netcdf-c;netcdf-fortran;openblas
+sfs_model.x,,jasper;jpeg;mpi;netcdf-c;netcdf-fortran;parallelio;png
+upp.x,,jasper;jpeg;mpi;netcdf-c;netcdf-fortran;openblas;png

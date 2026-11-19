@@ -1,0 +1,10 @@
+executable,profile,modulefiles
+enkf.x,,bufr/12.1.0;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27
+gcafs_model.x,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2
+gdas.x,FV3JEDI,atlas/0.40.0;bufr/12.1.0;eckit/1.28.3;fckit/0.13.2;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27
+gefs_model.x,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2
+gfs_model.x,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2
+global_cycle,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27
+gsi.x,,bufr/12.1.0;netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27
+sfs_model.x,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;parallelio/2.6.2
+upp.x,,netcdf-c/4.9.2;netcdf-fortran/4.6.1;openblas/0.3.27
